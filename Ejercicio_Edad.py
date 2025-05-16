@@ -1,11 +1,14 @@
 edad = int(input("Ingresa tu edad: "))
-if 1 <= edad <= 12:
-    print("eres unq Niño/a")
-elif 13 <= edad <= 17:
-    print("eres un@ Adolecente")
-elif edad >= 18:
-    print("Eres mayor de edad")
-elif edad > 70 :
-    print("Eres de la Tercera Edad")
+
+if edad <= 0:
+    print("Edad no válida. Por favor, ingresa un número positivo.")
+elif edad <= 1:
+    print("¿Eres un bebé?")
+elif edad <= 12:
+    print("Eres un/a niño/a")
+elif edad <= 17:
+    print("Eres un/a adolescente")
+elif edad > 70:
+    print("Eres de la tercera edad")
 else:
-    print("¿eres un bebe?")
+    print("Eres mayor de edad")
