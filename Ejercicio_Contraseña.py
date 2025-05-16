@@ -1,10 +1,9 @@
-contraseña=input("ingrese su nueva contraseña: ")
-cont_nueva = contraseña.upper()
-ing_contraseña=input("Ingrese la contraseña guardada: ")
-val_contraseña=ing_contraseña.upper()
+contraseña_guardada=input("ingrese su nueva contraseña: ")
 
-if cont_nueva == val_contraseña:
-    print("la contraseña es la correcta, la contra seña es: ", cont_nueva)
+validacion_contraseña=input("Ingrese la contraseña guardada: ")
+
+if contraseña_guardada.lower() == validacion_contraseña.lower():
+    print("la contraseña es la correcta, la contra seña es: ", contraseña_guardada)
 else:
     print("la contraseña es la incorrecta, intenta de nuevo")
 
